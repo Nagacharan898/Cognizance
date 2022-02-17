@@ -1,0 +1,13 @@
+1.print "This program outputs ‘True’ if a given number is divisible by 3 and ‘False’ otherwise."
+2.Declaring integers "remander,num,quotient,p"
+3.print "Enter the number"
+4.input (num)
+5.quotient=num/3
+6.p=quotient*3
+7.remainder=num-p
+8.if "remainder==0"
+		print response
+			"True"
+9.else
+	 print response
+			"False".

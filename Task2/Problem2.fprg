@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="nagac"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 12:49:02 PM"/>
+        <attribute name="created" value="bmFnYWM7TEFQVE9QLTU5T0FSQU9HOzIwMjItMDItMTc7MTI6MzQ6MjAgUE07MjgzOA=="/>
+        <attribute name="edited" value="bmFnYWM7TEFQVE9QLTU5T0FSQU9HOzIwMjItMDItMTc7MTI6NDk6MDIgUE07MTsyOTUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i, n, next" type="Integer" array="False" size=""/>
+            <output expression="&quot;This program is to calculate and print the nth fibanocci number&quot;" newline="True"/>
+            <output expression="&quot;Enter the position of the number&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <while expression="i&lt;n">
+                <if expression="i&lt;=1">
+                    <then>
+                        <assign variable="next" expression="i"/>
+                    </then>
+                    <else>
+                        <assign variable="next" expression="a+b"/>
+                        <assign variable="a" expression="b"/>
+                        <assign variable="b" expression="next"/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="next" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

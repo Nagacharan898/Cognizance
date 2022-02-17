@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="nagac"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 11:48:54 AM"/>
+        <attribute name="created" value="bmFnYWM7TEFQVE9QLTU5T0FSQU9HOzIwMjItMDItMTY7MTE6Mzk6MDUgQU07MjgyOQ=="/>
+        <attribute name="edited" value="bmFnYWM7TEFQVE9QLTU5T0FSQU9HOzIwMjItMDItMTY7MTE6NDg6NTQgQU07MTsyOTQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="remainder, num, quotient, p" type="Integer" array="False" size=""/>
+            <output expression="&quot;This program outputs &#8216;True&#8217; if a given number is divisible by 3 and &#8216;False&#8217; otherwise.&quot;" newline="True"/>
+            <output expression="&quot;Enter the number that is to be verified&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="quotient" expression="num/3"/>
+            <assign variable="p" expression="quotient*3"/>
+            <assign variable="remainder" expression="num-p"/>
+            <if expression="remainder==0">
+                <then>
+                    <output expression="&quot;True&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;False&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

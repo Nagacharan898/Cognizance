@@ -1,0 +1,19 @@
+   Declare Integer a, b, i, n, next
+    
+1.print "This is a program to calculate and print the Nth Fibonacci number."
+2.print "Enter the position of the number you would like to display."
+3.Input n
+4. Assigning i = 0
+5. Assigning a = 0
+6. Assigning b = 1
+7. While i<n
+8.     If i<=1
+           Assign next = i
+       else
+           Assign next = a+b
+           Assign a = b
+           Assign b = next
+       End if
+       Assign i = i+1
+   End while loop
+9. Output next
